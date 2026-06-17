@@ -2112,12 +2112,9 @@ html,body{height:100%;font-family:var(--fb);background:var(--bg);color:var(--t);
           <div class="auth-badge"><i class="ti ti-shield-lock"></i> Proceso protegido</div>
         </div>
         <div class="auth-form-shell acc-card">
-          <div class="acc-hero">
-            <div class="auth-form-title">Crea Tu Acceso</div>
-            <div class="auth-form-sub"><strong>Tu correo será tu usuario.</strong> Lo usarás para guardar y retomar el proceso.</div>
-          </div>
+          
           <div class="acc-body">
-            <div class="auth-inline-note"><i class="ti ti-info-circle"></i><span>Usa un correo al que tengas acceso. Ahí recibirás avisos del proceso.</span></div>
+            
             <div id="regError" style="display:none"></div>
             <div class="acc-form">
               <div><div class="acc-field-lbl"><i class="ti ti-user" style="font-size:13px"></i> Nombre completo</div><input class="acc-input" id="regNombre" autocomplete="name" placeholder="Giovanny Trujano" oninput="updateRegBtn();clearAccError('regError')"></div>
@@ -8732,8 +8729,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var form = regUser.closest('.acc-form') || regUser.parentElement?.parentElement;
     if(form && !$('pfaeRegisterNote')){
       form.insertAdjacentHTML('beforeend',
-        '<div id="pfaeRegisterNote" class="pfae-register-note"><i class="ti ti-info-circle" style="font-size:14px;flex-shrink:0;margin-top:1px"></i>' +
-        '<div>Este registro crea tu acceso a Web Banking. El correo y teléfono capturados aquí se usarán más adelante en la revisión de datos, porque no vienen en los documentos cargados.</div></div>'
+        
       );
     }
 
@@ -8965,8 +8961,7 @@ document.addEventListener('DOMContentLoaded', function(){
       var form = regUser.closest('.acc-form') || regUser.parentElement?.parentElement;
       if(form){
         form.insertAdjacentHTML('beforeend',
-          '<div id="pfaeRegisterNote" class="pfae-register-note"><i class="ti ti-info-circle" style="font-size:14px;flex-shrink:0;margin-top:1px"></i>' +
-          '<div>Correo y teléfono se tomarán de este registro; tus documentos no contienen esos datos.</div></div>'
+          
         );
       }
     }
